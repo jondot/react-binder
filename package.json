@@ -1,6 +1,6 @@
 {
   "name": "react-binder",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Bind React class methods",
   "main": "index.js",
   "scripts": {

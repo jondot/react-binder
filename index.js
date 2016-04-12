@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("react-binder", [], factory);
+	else if(typeof exports === 'object')
+		exports["react-binder"] = factory();
+	else
+		root["react-binder"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -46,6 +56,9 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 	var binderExcludes = {
 	  'constructor': true,
 	  'render': true,
@@ -95,7 +108,9 @@
 	  return bound;
 	}
 
-	module.exports = binder;
+	exports.default = binder;
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;

@@ -22,4 +22,4 @@ function binder(that, exp=/.*/, excludes=binderExcludes){
   return bound
 }
 
-module.exports = binder
+export default binder
